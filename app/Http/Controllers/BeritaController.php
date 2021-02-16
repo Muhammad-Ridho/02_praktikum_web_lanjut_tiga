@@ -4,21 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class BeritaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function About()
+    public function berita($param)
     {
-        //------------PRAKTIKUM 2-------------
-        // echo "Nim : 1941720149 <br>";
-        // echo " Nama : Muhammad Ridho Ramadhan";
-
-        //------------PRAKTIKUM 3-------------
-        return redirect('https://www.educastudio.com/about-us');
+        return redirect('https://www.educastudio.com/news/educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19'.$param);
+    }
+    
+    public function berita1()
+    {
+        return redirect('https://www.educastudio.com/news');
     }
 
     /**

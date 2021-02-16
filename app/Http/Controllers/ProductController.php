@@ -4,21 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function About()
+    public function index()
     {
-        //------------PRAKTIKUM 2-------------
-        // echo "Nim : 1941720149 <br>";
-        // echo " Nama : Muhammad Ridho Ramadhan";
-
-        //------------PRAKTIKUM 3-------------
-        return redirect('https://www.educastudio.com/about-us');
+        //
     }
 
     /**

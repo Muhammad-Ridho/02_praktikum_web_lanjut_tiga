@@ -13,7 +13,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        echo "Selamat Datang";
+        //--------PRAKTIKUM 2----------
+        // echo "Selamat Datang";
+
+        //--------PRAKTIKUM 3----------
+        return redirect('https://www.educastudio.com/');
     }
 
     /**

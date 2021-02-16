@@ -4,21 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function About()
+    public function eduGames()
     {
-        //------------PRAKTIKUM 2-------------
-        // echo "Nim : 1941720149 <br>";
-        // echo " Nama : Muhammad Ridho Ramadhan";
+        return redirect('https://www.educastudio.com/category/marbel-edu-games');
+    }
 
-        //------------PRAKTIKUM 3-------------
-        return redirect('https://www.educastudio.com/about-us');
+    public function kidsGames()
+    {
+        return redirect('https://www.educastudio.com/category/marbel-and-friends-kids-games');
+    }
+
+    public function storyBook()
+    {
+        return redirect('https://www.educastudio.com/category/riri-story-books');
+    }
+
+    public function kidsSong()
+    {
+        return redirect('https://www.educastudio.com/category/kolak-kids-songs');
     }
 
     /**
