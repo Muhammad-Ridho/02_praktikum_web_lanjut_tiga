@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    echo "Selamat Datang";
 });
+
+Route::get('/About', function () {
+   echo "Nim : 1941720149 ";
+   echo " Nama : Muhammad Ridho Ramadhan";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    return $id;
+ });
