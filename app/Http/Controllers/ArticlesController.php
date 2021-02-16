@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PhotoController extends Controller
+class ArticlesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +14,11 @@ class PhotoController extends Controller
     public function index()
     {
         //
+    }
+
+    public function articles($id)
+    {
+        return "Halaman Artikel ".$id;
     }
 
     /**

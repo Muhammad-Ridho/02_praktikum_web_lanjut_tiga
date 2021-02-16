@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticlesController;
 
 
 
@@ -20,15 +23,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    echo "Selamat Datang";
-});
+Route::get('/',[HomeController::class,'index']);
 
-Route::get('/About', function () {
-   echo "Nim : 1941720149 ";
-   echo " Nama : Muhammad Ridho Ramadhan";
-});
+Route::get('/About',[AboutController::class,'About']);
 
-Route::get('/articles/{id}', function ($id) {
-    return $id;
- });
+Route::get('/articles/{id}',[ArticlesController::class,'articles']);
